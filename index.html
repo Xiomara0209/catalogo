@@ -1,78 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CATALOGO DE ROPA</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Ropa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <h1>MI ROPA ES TU NUEVO ESTILO</h1>
-    <h2>Elegi el estilo que mas te guste</H2>
+  <header class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="IMAGENES/logo.png" alt="Logo" width="120"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+          <li class="nav-item"><a class="btn btn-primary ms-3" href="#contacto">Contáctanos</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
-    <div class="card" style="width: 18rem;">
-  <img src="IMAGENES/bermudas jean.jfif" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Bermuda</h5>
-    <p class="card-text">Talle del 36 al 42</p>
-    <p>$20.000</p>
-    <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-   </div>
-   </div>
+  <section id="inicio" class="text-white text-center d-flex align-items-center justify-content-center" 
+           style="background: url('IMAGENES/logo2.png') center/cover no-repeat; height: 80vh;">
+    <div class="bg-dark bg-opacity-50 p-5 rounded">
+      <h1 class="display-3 fw-bold">Encontra tu nuevo nuevo estilo</h1>
+      <p class="lead mb-4">Descubre las últimas tendencias en nuestra tienda online</p>
+      <a href="#productos" class="btn btn-primary btn-lg me-3">Ver Productos</a>
+      <a href="#contacto" class="btn btn-outline-light btn-lg">Contáctanos</a>
+    </div>
+  </section>
 
-    <div class="card" style="width: 18rem;">
-  <img src="IMAGENES/Jeans.jfif" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Jean cargo</h5>
-    <p class="card-text">Talle del 36 al 42</p>
-    <p>$40.000</p>
-    <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-   </div>
-   </div>
+  <section id="nosotros" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="text-primary mb-3">Sobre Nosotros</h2>
+          <p>Bienvenidos a NewStyle, una tienda pensada para que expreses tu personalidad a través de la moda. Tenemos ropa para que elijas el estilo que más prefieras, combinando comodidad, calidad y tendencia.</p>
+          <p>Nuestra misión es inspirarte a expresarte a través de lo que vistes.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="IMAGENES/equipo.jpg" class="img-fluid rounded-3 shadow" alt="Equipo de NewStyle">
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="card" style="width: 18rem;">
-  <img src="IMAGENES/camisa blanca basica (1).jfif" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Camisa Blanca</h5>
-    <p class="card-text">Disponible S, L, M</p>
-    <p>$9.800</p>
-    <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-   </div>
-   </div>
+  <section id="productos" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4 text-primary">Nuestros Productos</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="IMAGENES/bermudas jean.jfif" class="card-img-top" alt="Bermuda">
+            <div class="card-body">
+              <h5 class="card-title">Bermuda Jean</h5>
+              <p class="card-text">Comodidad y estilo para cualquier ocasión.</p>
+              <p class="card-text">Talle del 36 al 42</p>
+              <p>$20.000</p>
+              <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+          </div>
+        </div>   
+    <div class="row g-4">
+       <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="IMAGENES/camisa blanca basica (1).jfif" class="card-img-top" alt="camisa">
+            <div class="card-body">
+              <h5 class="card-title">Camisa Blanca</h5>
+              <p class="card-text">Diseño moderno y funcional, ideal para tu día a día.</p>
+              <p class="card-text">Disponible en S, L, M</p>
+              <p>$6.500</p>
+              <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+          </div>
+        </div>    
+    <div class="row g-4">
+       <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="IMAGENES/Jeans.jfif" class="card-img-top" alt="Jeans">
+            <div class="card-body">
+              <h5 class="card-title">Jean Cargo</h5>
+              <p class="card-text">Un clasico que nunca pasa de moda</p>
+              <p class="card-text">Talle 38 al 44</p>
+              <p>$18.800</p>
+              <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+          </div>
+        </div>  
+  <div class="row g-4">
+       <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="IMAGENES/short jean.jfif" class="card-img-top" alt="Short">
+            <div class="card-body">
+              <h5 class="card-title">Short Jean</h5>
+              <p class="card-text">Perfecto para cualquier momento.</p>
+              <p class="card-text">Talle 36 al 40</p>
+              <p>$11.200</p>
+              <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+          </div>
+        </div>    
+    <div class="row g-4">
+       <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="IMAGENES/tops negro.jfif" class="card-img-top" alt="Tops">
+            <div class="card-body">
+              <h5 class="card-title">Tops Negro</h5>
+              <p class="card-text">Diseñado para que brilles.</p>
+              <p class="card-text">Disponible S y L</p>
+              <p>$8.000</p>
+              <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+          </div>
+        </div>  
+  </section>
 
-    <div class="card" style="width: 18rem;">
-  <img src="IMAGENES/short jean.jfif" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Short Jean</h5>
-    <p class="card-text">Talle del 38 al 44</p>
-    <p>$15.000</p>
-    <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-   </div>
-   </div>
+  <section id="testimonios" class="py-5">
+    <div class="container text-center">
+      <h2 class="text-primary mb-4">Opiniones de Nuestros Clientes</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 border rounded shadow-sm bg-white">
+            <p>“Excelente calidad y atención. ¡Super recomiendo!”</p>
+            <h6>- Ricardo Sosa ⭐⭐⭐⭐⭐</h6>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 border rounded shadow-sm bg-white">
+            <p>“Me encanta su estilo y los precios son muy accesibles.”</p>
+            <h6>- Monica Ruiz⭐⭐⭐⭐☆</h6>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 border rounded shadow-sm bg-white">
+            <p>“Siempre encuentro algo nuevo, envío rápido y confiable.”</p>
+            <h6>- Viviana Gutierrez ⭐⭐⭐⭐⭐</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="card" style="width: 18rem;">
-  <img src="IMAGENES/tops negro.jfif" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Tops negro</h5>
-    <p class="card-text">Disponible en S, L, M</p>
-    <p>$40.000</p>
-    <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-   </div>
-   </div>
+  <section id="contacto" class="py-5 bg-dark text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h2>Contáctanos</h2>
+          <form>
+            <input type="text" class="form-control mb-3" placeholder="Nombre completo" required>
+            <input type="email" class="form-control mb-3" placeholder="Correo electrónico" required>
+            <textarea class="form-control mb-3" rows="4" placeholder="Mensaje..." required></textarea>
+            <button class="btn btn-primary w-100">Enviar</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h4>Información</h4>
+          <p>📍 Av. San Martin 1534,Cordoba</p>
+          <p>📞 (358) 9865-4321</p>
+          <p>📧 contacto@NewStyle.com</p>
+          <div class="mt-3">
+            <a href="#" class="text-light me-3">Instagram</a>
+            <a href="#" class="text-light me-3">Facebook</a>
+            <a href="#" class="text-light">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mt-4 mb-0">© 2025 NewStyle. Encontra tu nuevo estilo en mi tienda.</p>
+    </div>
+  </section>
 
-    <div class="card" style="width: 18rem;">
-  <img src="IMAGENES/vestido blanco.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Vestido blanco</h5>
-    <p class="card-text">Disponible en S y L</p>
-    <p>$12.200</p>
-    <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-   </div>
-   </div>
-    <footer>
-        <p>&copy;          2025 Mi Ropa es tu nuevo Estilo</p>
-    </footer>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
