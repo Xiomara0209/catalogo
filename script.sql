@@ -1,3 +1,4 @@
+CREATE DATABASE tienda_virtual
 USE tienda_virtual;
 CREATE TABLE usuarios(
     id INT AUTO_INCREMENT PRIMARY KEY,

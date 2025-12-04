@@ -151,17 +151,17 @@ def menu():
         opcion = input("Seleccione una opción: ")
 
         if opcion == "1":
-            registrar_usuario()
+            registrar_usuarios()
         elif opcion == "2":
             iniciar_sesion()
         elif opcion == "3":
-            consultar_usuario()
+            consultar_usuarios()
         elif opcion == "4":
-            modificar_usuario()
+            modificar_usuarios()
         elif opcion == "5":
             modificar_password()
         elif opcion == "6":
-            eliminar_usuario()
+            eliminar_usuarios()
         elif opcion == "7":
             print("¡Hasta pronto!")
             break
