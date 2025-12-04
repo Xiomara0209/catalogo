@@ -8,7 +8,7 @@ def conectar():
         database="tienda_virtual"
     )
 
-def registrar_usuario():
+def registrar_usuarios():
     print("\n--- REGISTRAR USUARIO ---")
     
     nombre = input("Nombre: ")
@@ -25,10 +25,10 @@ def registrar_usuario():
     cursor = conexion.cursor()
 
     query = """
-        INSERT INTO usuarios (nombre, apellido, email, password, telefono, direccion)
-        VALUES (%s, %s, %s, %s, %s, %s)
+        INSERT INTO usuarios(nombre, apellido, email, password, telefono, direccion, ciudad, provincia, pais)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
     """
-    datos = (nombre, apellido, email, password, telefono, direccion)
+    datos = (nombre, apellido, email, password, telefono, direccion, ciudad, provincia, pais)
 
     cursor.execute(query, datos)
     conexion.commit()
@@ -49,8 +49,8 @@ def iniciar_sesion():
     conexion = conectar()
     cursor = conexion.cursor()
 
-    query = "SELECT id, nombre, apellido FROM usuario_tienda WHERE email = %s AND contraseña = %s"
-    cursor.execute(query, (email, contraseña))
+    query = "SELECT id, nombre, apellido FROM usuarios WHERE email = %s AND password = %s"
+    cursor.execute(query, (email, password))
     resultado = cursor.fetchone()
 
     if resultado:
