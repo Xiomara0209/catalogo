@@ -15,7 +15,10 @@ CREATE TABLE usuario_tienda(
 INSERT INTO usuario_tienda (email, contraseña, nombre, apellido, telefono, direccion, ciudad, provincia, pais)
 VALUES 
 ('monica1@gmail.com', '78910', 'Monica', 'Ruiz', '0119754238', '25 de Mayo 465', 'Tartagal', 'Salta', 'Argentina'),
-('ricardo2@gmail.com', '123456', 'Ricardo', 'Sosa', '1122667598', 'Alberdi 321', 'Rio Cuarto', 'Córdoba', 'Argentina');
+('ricardo2@gmail.com', '123456', 'Ricardo', 'Sosa', '1122667598', 'Alberdi 321', 'Rio Cuarto', 'Córdoba', 'Argentina'),
+('daniela44@gmail.com', '33756ef', 'Daniela', 'Cabral', '3589924452', 'Calle 5 236', 'Lima', 'Buenos Aires', 'Argentina'),
+('fran88@gmail.com', '01122pr', 'Francisco', 'Araoz', '38784428007', 'Belgrano 776', 'La Banda', 'Santiago del Estero', 'Argentina'),
+('maxi99@gmail.com', '50037xm', 'Maximiliano', 'Gutierrez', '343567821', 'Mendoza 444', 'San pedro', 'Jujuy', 'Argentina');
 UPDATE usuario_tienda
 SET contraseña = '221133'
 WHERE id = 1;
